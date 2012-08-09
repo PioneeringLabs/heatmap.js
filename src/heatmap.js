@@ -646,5 +646,11 @@
             }
         };
     })();
+    
     w.h337 = w.heatmapFactory = heatmapFactory;
+    
+    // Support CommonJS Modules
+    if(module !== undefined && module.hasOwnProperty('exports')){
+        module.exports = w.h337;
+    }
 })(window);
